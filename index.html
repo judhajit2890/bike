@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quad Bike</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-----------------------------------------------------------header start--------------------------------------------------->
+    <section class="header" id="header">
+        <nav>
+            <a href="#header" class="logo"><img src="./img/logo.png" alt=""></a>
+            <ul id="menu">
+                <!-- <li><a href="#header" class="active">Home</a></li> -->
+                <li><a href="#bike">Bikes</a></li>
+                <li><a href="#tracks">Tracks</a></li>
+                <li><a href="#gallery">Gallerys</a></li>
+                <li><a href="#package">Package</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <a href="#"id="close"><i class="fa  fa-close"></i></a> -->
+                <i id="close" class="fa-solid fa-xmark"></i>
+            </ul>
+            <div class="sm-screen">
+                <i id="bar" class="fa-solid fa-bars menubar"></i>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-text">
+                <h1 class="e">Experience the</h1>
+                <h1 class="a">Adventure of</h1>
+                <h1 class="b"><em>quad bike</em></h1>
+            </div>
+            <button type="submit" class="btn" onclick="openPopup()">Try it Now</button>
+            <div class="popup" id="popup">
+                <span><img src="./img/logo.png"></span>
+                <input type="email" placeholder="Your Email Id">
+                <input type="password" placeholder="Password">
+                <p>Create an account?<a href="#">Sign up</a></p>
+                <button type="submit" onclick="closePopup()">Sign in</button>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------------------------------header end--------------------------------------------------->
+
+    <!-----------------------------------------------------------bike start--------------------------------------------------->
+
+
+    <section class="bike"id="bike">
+        <div class="skew-div">
+            <div class="skew"></div>
+            <div class="skew"></div>
+        </div>
+        
+        <div class="inner">
+            <div class="profile">
+                <h1>Quad Bike</h1>
+                <p>Quad Bike</p>
+            </div>
+            <ul>
+                <li><button id="bike1">Bike 1</button></li>
+                <li><button id="bike2">Bike 2</button></li>
+            </ul>
+            <div class="bike-details">
+                <div class="image" id="bikeimg">
+                    <!-- <img src="./img/bike/bike1.png" alt=""> -->
+                </div>
+                <div class="bike-info">
+                    <h2>About Bike</h2>
+                    <hr>
+                    <h3>0-60 kmp/h : <span id="km">12 sec</span></h3>
+                    <h3>Top Speed : <span id="speed">150 km/h</span></h3>
+                    <h3>Engine : <span id="cc">300cc</span></h3>
+                </div>
+            </div>
+            <div class="bike1">
+                <div class="line"></div>
+                <div>
+                    <h4 id="model">Bike 1</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------------------------------bike end--------------------------------------------------->
+     
+    <!-----------------------------------------------------------tracks start--------------------------------------------------->
+
+
+
+    <section class="tracks" id="tracks">
+        <div class="tskew-div">
+            <div class="skew"></div>
+            <div class="skew"></div>
+        </div>
+        
+        <div class="inner">
+            <div class="profile">
+                <h1>Limits</h1>
+                <p>Tracks</p>
+            </div>
+            <ul>
+                <li><button id="Track1">Track 1</button></li>
+                <li><button id="Track2">Track 2</button></li>
+                <li><button id="Track3">Track 3</button></li>
+
+            </ul>
+            <div class="track-details">
+                <div class="image" id="trackimg">
+                    <!-- <img src="./img/bike/bike1.png" alt=""> -->
+                </div>
+                <div class="track-info">
+                    <h2>About tracks</h2>
+                    <hr>
+                    <h3>Defficulty :  <span id="ea">Easy</span></h3>
+                    <h3>Track Surface :  <span id="di">Dirt</span></h3>
+                    <h3>Distance :  <span id="k">1.5 km</span></h3>
+                </div>
+            </div>
+            <div class="track1">
+                <div class="line"></div>
+                <div>
+                    <h4 id="race">track 1</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----------------------------------------------------------tracks end--------------------------------------------------->
+
+
+
+    <!-----------------------------------------------------------gallery start--------------------------------------------------->
+
+    <section class="gallery" id="gallery">
+        <div class="galleryline-div">
+            <div class="line"></div>
+            <div class="line line2"></div>
+        </div>
+        
+        <div class="inner">
+            <div class="profile">
+                <h1>Story</h1>
+                <p>Gallery</p>
+            </div>
+            <div class="container">
+                <div class="box  box1" data-tilt>
+                    <img src="./img/gallery/jpg/g2.jpg" alt="">
+                </div>
+                <div class="box box2"data-tilt>
+                    <img src="./img/gallery/jpg/g1.jpg" alt="">
+                </div>
+                <div class="box box3"data-tilt>
+                    <img src="./img/gallery/jpg/g3.jpg" alt="">
+                </div>
+                <div class="box box4"data-tilt>
+                    <img src="./img/gallery/g4.jpg" alt="">
+                </div>
+                <div class="box box5"data-tilt>
+                    <img src="./img/gallery/g5.jpg" alt="">
+                </div>
+                 <div class="box box6"data-tilt>
+                    <img src="./img/gallery/g7.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-----------------------------------------------------------gallery end--------------------------------------------------->
+
+
+    <!-----------------------------------------------------------package start--------------------------------------------------->
+    <section class="package" id="package">
+        <div class="packageline-div">
+            <div class="line"></div>
+            <div class="line line2"></div>
+        </div>
+        
+        <div class="inner">
+            <div class="profile">
+                <h1>To Buy</h1>
+                <p>Packages</p>
+            </div>
+            <div class="package-details">
+                <div class="card">
+                    <div class="head">
+                        <h4>For</h4>
+                        <h3>Track 1</h3>
+                    </div>
+                    <div class="details">
+                        <h4>Ride Duration</h4>
+                        <h5>30 Min</h5>
+                        <hr>
+                        <h6><i class="fa-solid fa-check"></i>Lorem Ipsum</h6>
+                        <h6><i class="fa-solid fa-xmark"></i>Lorem Ipsum</h6>
+                        <h3>NRI 350<span>Per Adult</span></h3>
+                        <button class="bt1">Buy Now</button>
+
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="head">
+                        <h4>For</h4>
+                        <h3>Track 2</h3>
+                    </div>
+                    <div class="details">
+                        <h4>Ride Duration</h4>
+                        <h5>45 Min</h5>
+                        <hr>
+                        <h6><i class="fa-solid fa-check fast"></i>Lorem Ipsum</h6>
+                        <h6><i class="fa-solid fa-check"></i>Lorem Ipsum</h6>
+                        <h3>NRI 550<span>Per Adult</span></h3>
+                        <button class="bt1">Buy Now</button>
+
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="head">
+                        <h4>For</h4>
+                        <h3>Track 3</h3>
+                    </div>
+                    <div class="details">
+                        <h4>Ride Duration</h4>
+                        <h5>30 Min</h5>
+                        <hr>
+                        <h6><i class="fa-solid fa-check"></i>Lorem Ipsum</h6>
+                        <h6><i class="fa-solid fa-check"></i>Lorem Ipsum</h6>
+                        <h6><i class="fa-solid fa-check"></i>Lorem Ipsum</h6>
+                        <h3>NRI 750<span>Per Adult</span></h3>
+                        <button>Buy Now</button>
+
+                    </div>
+                    
+                </div>
+            </div>
+           
+            
+        </div>
+    </section>
+
+    <!-----------------------------------------------------------package end--------------------------------------------------->
+
+
+
+
+    <!------------------------------review start-------------------------------->
+    <section class="review" id="review">
+        <div class="reviewline-div">
+            <div class="line"></div>
+            <div class="line line2"></div>
+        </div>
+        
+        <div class="inner">
+            <div class="profile read">
+                <h1>Read Blog</h1>
+                <p>Reviews</p>
+            </div>
+            <div class="review-details">
+                <div class="view">
+                    <div class="image m1">
+                        <!-- <img src="./img/review/r1.jpg" alt=""> -->
+                        
+                    </div>
+                    <h4>Shyam Ratan</h4>
+                    <h6>It is a long established fact that a reader will 
+                        be distracted by the readable content of a page 
+                        when looking at its layout.
+                    </h6>
+                    <div class="mark">
+                        <h5>Good</h5>
+                        <div class="star">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            
+                        </div>
+                        
+    
+                    </div>
+                </div>
+                <div class="view">
+                    <div class="image m2">
+                        <!-- <img src="./img/review/r4.jpg" alt=""> -->
+                    </div>
+                    <h4>Joshep Mark</h4>
+                    <h6>It is a long established fact that a reader will 
+                        be distracted by the readable content of a page 
+                        when looking at its layout.
+                    </h6>
+                    <div class="mark">
+                        <h5>Amezing</h5>
+                        <div class="star">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span> 
+                        </div>
+                        
+    
+                    </div>
+                </div>
+                <div class="view">
+                    <div class="image m3">
+                        <!-- <img src="./img/review/r5.jpg" alt=""> -->
+                    </div>
+                    <h4>Swati Patil</h4>
+                    <h6>It is a long established fact that a reader will 
+                        be distracted by the readable content of a page 
+                        when looking at its layout.
+                    </h6>
+                    <div class="mark">
+                        <h5>Adrenaline Rush</h5>
+                        <div class="star">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span> 
+                        </div>
+                        
+    
+                    </div>
+                </div>
+                <div class="view four" >
+                    <div class="image m4">
+                        <!-- <img src="./img/review/r2.jpg" alt=""> -->
+                    </div>
+                    <h4>Robin Jain</h4>
+                    <h6>It is a long established fact that a reader will 
+                        be distracted by the readable content of a page 
+                        when looking at its layout.
+                    </h6>
+                    <div class="mark">
+                        <h5>Amezed</h5>
+                        <div class="star">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="view five">
+                    <div class="image m5">
+                        <!-- <img src="./img/review/r2.jpg" alt=""> -->
+                    </div>
+                    <h4>Samay Mathur</h4>
+                    <h6>It is a long established fact that a reader will 
+                        be distracted by the readable content of a page 
+                        when looking at its layout.
+                    </h6>
+                    <div class="mark">
+                        <h5>Exciting</h5>
+                        <div class="star">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="view five">
+                    <div class="image m6">
+                        <!-- <img src="./img/review/r2.jpg" alt=""> -->
+                    </div>
+                    <h4>Uday Jain</h4>
+                    <h6>It is a long established fact that a reader will 
+                        be distracted by the readable content of a page 
+                        when looking at its layout.
+                    </h6>
+                    <div class="mark">
+                        <h5>Exciting</h5>
+                        <div class="star">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="#">Read More....</a>
+        </div> 
+           
+                   
+            
+                
+
+
+    
+    </section>
+    <!------------------------------review end-------------------------------->
+
+    
+    <!------------------------------contact start-------------------------------->
+    <section class="contact" id="contact">
+        <div class="contactline-div">
+            <div class="line"></div>
+            <div class="line line2"></div>
+        </div>
+        
+        <div class="inner">
+            <div class="profile">
+                <h1>Hear to Help</h1>
+                <p>Contact</p>
+            </div>
+            <div class="form-details">
+                <form action="#" onsubmit="return validation();">
+                    <h5>Love to Help</h5>
+                   
+                    <input type="name" placeholder="Your Name"id="user">
+                    <span id="uname"></span>
+                    <input type="email" placeholder="Your Email-Id"id="email">
+                    <span id="mail"></span>
+                    <textarea type="textarea" cols="30" rows="5" placeholder="Massage"id="massage"></textarea>
+                    <span id="mass"></span>
+                    <input class="btn" type="Submit">
+
+                </form>
+                <div class="know">
+                    <h3>To know More....</h3>
+                    <button>Call Us</button>
+                </div>
+            </div>
+           
+        </div> 
+           
+                   
+            
+                
+
+
+    
+    </section>
+    <!------------------------------contact end-------------------------------->
+
+
+
+    <!------------------------------footer star-------------------------------->
+    <footer>
+        
+        <div class="inner">
+            <div class="footer-details">
+                <div class="col">
+                    <img class="logo"src="./img/logo.png" alt="">
+                    <h4>Contact</h4>
+                    <h6><strong>Address:</strong> <span>7 AC BLOCK, ROAD 67, RAJARHAT. KOLKATA</span></h6>
+                    <h6><strong>Phone:</strong> <span>(+91) 012345 6789</span></h6>
+                    <h6><strong>Hours:</strong> <span>10:00-18:00. Mon-Friday</span></h6>
+                    <h4 class="flow">Follow Us</h4>
+                    <div class="social-media">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+                </div>
+                
+
+                <div class="about">
+                   <h4>About</h4>
+                   <h5 class="A"><a href="#">About Us</a></h65>
+                   <h5 class="D"><a href="#">Delivery Information</a></h5>
+                   <h5 class="P"><a href="#">privacy Policy</a></h5>
+                   <h5 class="T"><a href="#">Terms & Condition</a></h5>
+                   <h5 class="C"><a href="#">contact us</a></h5>
+
+                </div>
+            
+                <div class="payment">
+                   <h5>Secured Payment Gateways</h5>
+                   <img src="./img/pay.png" alt="">
+                </div>
+            </div>
+            <h6 class="copy">&copy 2022. Pictograph-HTML CSS Tourist Template</h6>
+        </div>
+        
+        <div class="footer-skew">
+            <div class="skew"></div>
+            <div class="skew"></div>
+        </div>
+        
+        
+    </footer>
+
+
+
+
+    <!------------------------------footer end-------------------------------->
+
+
+
+
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/vanilla-tilt.js"></script>
+    
+   
+</body>
+</html>
